@@ -1,9 +1,10 @@
 import React, { ChangeEvent, useState } from "react";
 import Greeting from "./Greeting";
+import { UserType } from "./HW3";
 
 type GreetingContainerPropsType = {
-  users: any; // need to fix any
-  addUserCallback: any; // need to fix any
+  users: Array<UserType>;
+  addUserCallback: (name: string) => void;
 };
 
 // уровень локальной логики
@@ -12,17 +13,29 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
   addUserCallback,
 }) => {
   // деструктуризация пропсов
-  const [name, setName] = useState<string>(""); // need to fix any
-  const [error, setError] = useState<any>(""); // need to fix any
+  const [name, setName] = useState<string>("");
+  const [error, setError] = useState<boolean>(false);
 
   const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
-    setName(e.currentTarget.value); // need to fix
-  };
-  const addUser = () => {
-    alert(`Hello  !`); // need to fix
+    let userName = e.currentTarget.value;
+    if (userName.length === 0 || userName === " ") {
+      setError(true);
+      setName("");
+    } else {
+      setName(userName);
+      setError(false);
+    }
   };
 
-  const totalUsers = 0; // need to fix
+  const addUser = () => {
+    if (name.length > 0) {
+      alert(`Hello ${name} !`);
+      addUserCallback(name);
+      setName("");
+    }
+  };
+
+  const totalUsers = users.length;
 
   return (
     <Greeting
