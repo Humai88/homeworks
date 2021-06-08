@@ -1,0 +1,31 @@
+.error {
+  /* border: 2px solid #ad0000; */
+}
+input {
+  border: 2px solid #383838;
+  margin: 2rem;
+  height: 2rem;
+  border-radius: 5px;
+}
+/* rgb(192, 143, 238) */
+.btn {
+  border-radius: 5px;
+  width: 6rem;
+  height: 2rem;
+  background-color: #383838;
+  color: rgb(215, 182, 245);
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+.btn:hover {
+  background-color: #575757;
+}
+span {
+  font-size: 1.3rem;
+  color: rgb(37, 37, 37);
+  font-weight: 600;
+}
+
+.wrapper {
+  margin: 2rem 0;
+}

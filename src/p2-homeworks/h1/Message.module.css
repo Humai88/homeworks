@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,300;1,400&display=swap");
+* {
+  font-family: "Montserrat";
+}
+body {
+  background-color: rgb(137, 129, 139);
+}
+.message {
+  display: flex;
+  margin: 4rem 0 2rem 1rem;
+}
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  align-self: flex-start;
+  border-radius: 50%;
+}
+.message__wrapper,
+.message__wrapper2 {
+  margin: 0 2rem 0 2rem;
+  background-color: #383838;
+  min-width: 15%;
+  background: #383838;
+  padding: 20px;
+  font-weight: 900;
+  font-family: arial;
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px 1px black;
+}
+.message__wrapper::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #383838;
+  border-top: 10px solid #383838;
+  border-bottom: 10px solid transparent;
+  left: -19px;
+  top: 1rem;
+}
+.message__wrapper2::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #383838;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #383838;
+  border-bottom: 10px solid transparent;
+  right: -19px;
+  top: 1rem;
+}
+.message__name {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(192, 143, 238);
+}
+.message__text {
+  color: rgb(238, 238, 238);
+  font-weight: 400;
+}
+.message__time {
+  color: rgb(189, 189, 189);
+  font-weight: 300;
+  font-style: italic;
+  text-align: end;
+  margin: 0;
+}
