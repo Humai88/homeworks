@@ -2,6 +2,7 @@ import React from "react";
 import { AffairType } from "./HW2";
 import { FaTimes } from "react-icons/fa";
 import styles from "./Affairs.module.css";
+import SuperButton from "./../h4/common/c2-SuperButton/SuperButton";
 
 type AffairPropsType = {
   affair: AffairType;
@@ -31,9 +32,9 @@ function Affair(props: AffairPropsType) {
         </div>
       </div>
 
-      <button className={styles.deleteBtn} onClick={deleteCallback}>
+      <SuperButton className={styles.deleteBtn} onClick={deleteCallback}>
         <FaTimes />
-      </button>
+      </SuperButton>
     </div>
   );
 }

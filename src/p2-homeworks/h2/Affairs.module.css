@@ -3,44 +3,28 @@
 body {
   background-color: rgb(46, 46, 46);
 }
-button {
-  border: none;
-}
+
 .wrapper {
   display: grid;
-  grid-template-columns: 10% 10% 20% 60%;
+  grid-template-columns: 10% 10% 10% 70%;
   margin-left: 2rem;
 }
 .deleteBtn {
-  width: 5rem;
-  height: 1.8rem;
-  border: none;
-  text-transform: uppercase;
-  text-align: center;
-  color: #e9e9e9;
-  transition: all 0.15s;
-  font-weight: 400;
-  border: 1px solid #e9e9e9;
-  background-color: transparent;
+  margin: 1rem;
 }
-.deleteBtn:hover {
-  background-color: rgb(48, 38, 54);
-  border: 1px solid #b267f8;
-  color: #b267f8;
-}
+
 .name {
-  display: inline;
+  display: inline-block;
   font-weight: 600;
   font-size: 1.4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.2rem;
   align-self: center;
   color: #e9e9e9;
 }
 .priority {
-  display: inline;
+  display: inline-block;
   font-weight: 400;
   font-size: 1.4rem;
-  margin-bottom: 1rem;
   align-self: center;
   text-shadow: 1px 1px 2px #1a1a1a;
 }
@@ -52,19 +36,6 @@ button {
   width: 23%;
 }
 .buttonsWrapper button {
-  border: none;
   margin: 3px;
   padding: 8px 20px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #e9e9e9;
-  transition: all 0.15s;
-  font-weight: 400;
-  border: 1px solid #e9e9e9;
-  background-color: transparent;
-}
-.buttonsWrapper button:hover {
-  background-color: rgb(48, 38, 54);
-  border: 1px solid #b267f8;
-  color: #b267f8;
 }
