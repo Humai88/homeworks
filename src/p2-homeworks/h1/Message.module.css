@@ -2,9 +2,7 @@
 * {
   font-family: "Montserrat";
 }
-body {
-  background-color: rgb(137, 129, 139);
-}
+
 .message {
   display: flex;
   margin: 4rem 0 2rem 1rem;
@@ -19,9 +17,8 @@ body {
 .message__wrapper,
 .message__wrapper2 {
   margin: 0 2rem 0 2rem;
-  background-color: #383838;
   min-width: 15%;
-  background: #383838;
+  background: #7b5c90;
   padding: 20px;
   font-weight: 900;
   font-family: arial;
@@ -35,8 +32,8 @@ body {
   height: 0px;
   position: absolute;
   border-left: 10px solid transparent;
-  border-right: 10px solid #383838;
-  border-top: 10px solid #383838;
+  border-right: 10px solid #7b5c90;
+  border-top: 10px solid #7b5c90;
   border-bottom: 10px solid transparent;
   left: -19px;
   top: 1rem;
@@ -46,9 +43,9 @@ body {
   width: 0px;
   height: 0px;
   position: absolute;
-  border-left: 10px solid #383838;
+  border-left: 10px solid #7b5c90;
   border-right: 10px solid transparent;
-  border-top: 10px solid #383838;
+  border-top: 10px solid #7b5c90;
   border-bottom: 10px solid transparent;
   right: -19px;
   top: 1rem;
@@ -56,8 +53,8 @@ body {
 .message__name {
   margin: 0;
   font-size: 1.2rem;
-  font-weight: 600;
-  color: rgb(192, 143, 238);
+  font-weight: 500;
+  color: rgb(213, 169, 255);
 }
 .message__text {
   color: rgb(238, 238, 238);

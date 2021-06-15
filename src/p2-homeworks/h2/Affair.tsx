@@ -32,7 +32,7 @@ function Affair(props: AffairPropsType) {
       </div>
 
       <button className={styles.deleteBtn} onClick={deleteCallback}>
-        <FaTimes style={{ color: "rgb(192, 143, 238)" }} />
+        <FaTimes />
       </button>
     </div>
   );

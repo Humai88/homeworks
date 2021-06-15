@@ -25,7 +25,7 @@ const Greeting: React.FC<GreetingPropsType> = ({
         className={error ? s.error : s.noError}
       />
 
-      <span>{error}</span>
+      {/* <span>{error}</span> */}
       <button
         disabled={error && true}
         className={error || name.length === 0 ? s.disable : s.btn}
