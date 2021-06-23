@@ -13,10 +13,10 @@
 }
 .nav {
   display: grid;
-  grid-template-columns: 30% 30% 30% 10%;
+  grid-template-columns: 25% 25% 25% 25%;
   justify-items: center;
   background-color: #4b3b55;
-  width: 25%;
+  width: 26%;
   padding: 1rem;
   margin-left: -27rem;
   transition: 0.9s;
@@ -27,4 +27,5 @@
 .trigger {
   color: rgb(213, 169, 255);
   font-size: 1.4rem;
+  justify-self: end;
 }
