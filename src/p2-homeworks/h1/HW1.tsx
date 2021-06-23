@@ -22,15 +22,16 @@ let currentTime = `${hours}:${minutes}`;
 function HW1() {
   return (
     <div>
+      <br />
+      <br />
+      homeworks 1
       <hr />
-
       <Message
         avatar={messageData.avatar}
         name={messageData.name}
         message={messageData.message}
         time={messageData.time}
       />
-
       <AlternativeMessage
         avatar={AlternativeMessageData.avatar}
         name={AlternativeMessageData.name}
