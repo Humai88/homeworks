@@ -12,7 +12,7 @@ const AlternativeMessageData = {
   avatar:
     "https://i2-prod.coventrytelegraph.net/incoming/article9091017.ece/ALTERNATES/s1200c/williamshakespeare.jpg",
   name: "William Shakespeare",
-  message: "Hello Scott ^_-",
+  message: "Hello Walter ^_-",
 };
 
 let hours = new Date().getHours();

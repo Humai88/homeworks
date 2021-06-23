@@ -32,7 +32,11 @@ function Affair(props: AffairPropsType) {
         </div>
       </div>
 
-      <SuperButton className={styles.deleteBtn} onClick={deleteCallback}>
+      <SuperButton
+        red={true}
+        className={styles.deleteBtn}
+        onClick={deleteCallback}
+      >
         <FaTimes />
       </SuperButton>
     </div>
