@@ -1,0 +1,6 @@
+.span {
+  cursor: pointer;
+}
+.span:hover {
+  color: rgb(217, 201, 230);
+}
