@@ -1,0 +1,15 @@
+.wrapper {
+  margin: 1rem;
+  font-size: 1.3rem;
+}
+.btns {
+  margin-top: 1rem;
+}
+.btn {
+  margin-right: 7px;
+}
+.list {
+  width: 25%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}

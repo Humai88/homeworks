@@ -27,10 +27,6 @@ function HW7() {
         />
       </div>
       <hr />
-      {/*для личного творчества, могу проверить*/}
-      {/*<AlternativeSuperSelect/>*/}
-      {/*<AlternativeSuperRadio/>*/}
-      <hr />
     </div>
   );
 }
