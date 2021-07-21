@@ -11,6 +11,7 @@ export type ActionCheckType = {
   type: "CHECK";
   payload: number;
 };
+
 export const homeWorkReducer = (
   state: UserType[],
   action: ActionsType

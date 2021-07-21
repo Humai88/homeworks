@@ -1,0 +1,14 @@
+.wrapper {
+  margin: 1rem;
+}
+.btn {
+  margin-right: 7px;
+}
+.header {
+  height: 3.5rem;
+  width: 7rem;
+}
+.day {
+  position: absolute;
+  margin-top: 0.7rem;
+}
