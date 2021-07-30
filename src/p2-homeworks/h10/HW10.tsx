@@ -1,38 +1,41 @@
-import React from 'react'
-import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import { useSelector, useDispatch } from "react-redux";
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import { loadingAC, LoadingStateType } from "./bll/loadingReducer";
+import { AppStoreType } from "./bll/store";
+import styles from "./HW10.module.css";
+import preloader from "./img/grid.svg";
 
 function HW10() {
-    // useSelector, useDispatch
-    const loading = false
+  const dispatch = useDispatch();
+  let loading = useSelector<AppStoreType, LoadingStateType>(
+    (state) => state.loading
+  );
 
-    const setLoading = () => {
-        // dispatch
-        // setTimeout
-        console.log('loading...')
-    };
+  const setLoading = () => {
+    dispatch(loadingAC(true));
+    setTimeout(function () {
+      dispatch(loadingAC(false));
+    }, 2000);
 
-    return (
+    console.log("loading...");
+  };
+
+  return (
+    <div>
+      <hr />
+      homeworks 10
+      {loading.isLoading ? (
+        <img className={styles.preloader} src={preloader} alt="loading" />
+      ) : (
         <div>
-            <hr/>
-            homeworks 10
-
-            {/*should work (должно работать)*/}
-            {loading
-                ? (
-                    <div>крутилка...</div>
-                ) : (
-                    <div>
-                        <SuperButton onClick={setLoading}>set loading...</SuperButton>
-                    </div>
-                )
-            }
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<Alternative/>*/}
-            <hr/>
+          <SuperButton className={styles.btn} onClick={setLoading}>
+            set loading...
+          </SuperButton>
         </div>
-    )
+      )}
+      <hr />
+    </div>
+  );
 }
 
-export default HW10
+export default HW10;
