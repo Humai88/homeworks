@@ -1,0 +1,19 @@
+.header {
+  /* display: block; */
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+span {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.mainWrapper {
+  margin: 0 2rem 4rem 2rem;
+}

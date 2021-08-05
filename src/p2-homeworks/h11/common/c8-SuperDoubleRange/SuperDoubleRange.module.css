@@ -2,6 +2,7 @@
   -webkit-appearance: none;
   width: 400px;
   height: 7px;
+  position: absolute;
   background: #a4a4a4;
   outline: none;
 }
