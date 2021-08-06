@@ -1,61 +1,79 @@
-.slider {
-  -webkit-appearance: none;
+.wrapper {
+  position: relative;
   width: 400px;
-  height: 7px;
-  background: #a4a4a4;
-  outline: none;
+  background-color: transparent;
+  padding: 0 40px 20px 40px;
 }
-
-.slider input {
-  pointer-events: none;
-  position: absolute;
-  overflow: hidden;
-  left: 25%;
-  top: 15px;
-  width: 50%;
-  outline: none;
-  height: 18px;
-  margin: 0;
-  padding: 0;
+.container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
 }
-
-.slider::-webkit-slider-thumb {
+.doubleRange {
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
-  width: 35px;
-  height: 35px;
-  background: #4b3b55;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+.sliderTrack {
+  width: 100%;
+  height: 5px;
+  background-color: rgb(180, 180, 180);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-repeat: 5px;
+}
+.doubleRange::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 5px;
+}
+.doubleRange::-moz-range-track {
+  -moz-appearance: none;
+  height: 5px;
+}
+.doubleRange::-ms-track {
+  appearance: none;
+  height: 5px;
+}
+.doubleRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 2em;
+  width: 2em;
+  background-color: #4b3b55;
   cursor: pointer;
   border-radius: 50%;
-  pointer-events: all;
-  position: relative;
-  z-index: 1;
-  outline: 0;
+  margin-top: -11px;
+  pointer-events: auto;
 }
-
-.slider::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  background: #4b3b55;
+.doubleRange::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 2em;
+  width: 2em;
+  background-color: #4b3b55;
   cursor: pointer;
-
-  pointer-events: all;
-  position: relative;
-  z-index: 10;
-  -moz-appearance: none;
-  width: 9px;
+  border-radius: 50%;
+  pointer-events: auto;
 }
-
-.slider input::-moz-range-track {
-  position: relative;
-  z-index: -1;
-  border: 0;
+.doubleRange::-ms-thumb {
+  -ms-appearance: none;
+  height: 2em;
+  width: 2em;
+  background-color: #4b3b55;
+  cursor: pointer;
+  border-radius: 50%;
+  pointer-events: auto;
 }
-.slider input:last-of-type::-moz-range-track {
-  -moz-appearance: none;
-  background: none transparent;
-  border: 0;
-}
-.slider input[type="range"]::-moz-focus-outer {
-  border: 0;
+.doubleRange:active::-webkit-slider-thumb {
+  background-color: #d1a2ee;
+  border: 3px solid #4b3b55;
 }

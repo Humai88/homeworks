@@ -1,19 +1,37 @@
-.header {
-  /* display: block; */
-  width: 400px;
-  display: flex;
-  justify-content: space-between;
-}
 span {
-  margin: 2rem 0;
   font-size: 1.5rem;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 .mainWrapper {
-  margin: 0 2rem 4rem 2rem;
+  padding: 50px 0 50px 0;
+}
+.values {
+  background-color: #4b3b55;
+  width: 12%;
+  position: relative;
+  margin: auto;
+  padding: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+.values::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-top: 15px solid #4b3b55;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  margin: auto;
+  bottom: -14px;
+  left: 0;
+  right: 0;
+}
+.doubleRange {
+  margin-top: 2rem;
 }

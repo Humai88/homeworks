@@ -3,7 +3,7 @@ import React, {
   DetailedHTMLProps,
   InputHTMLAttributes,
 } from "react";
-import s from "./SuperRange.module.css";
+import styles from "./SuperRange.module.css";
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<
@@ -32,17 +32,20 @@ const SuperRange: React.FC<SuperRangePropsType> = ({
     onChangeRange && onChangeRange(+e.currentTarget.value);
   };
 
-  const finalRangeClassName = `${s.slider} ${className ? className : ""}`;
+  const finalRangeClassName = `${styles.slider} ${className ? className : ""}`;
 
   return (
-    <>
-      <input
-        type={"range"}
-        onChange={onChangeCallback}
-        className={finalRangeClassName}
-        {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
-      />
-    </>
+    <div className={styles.wrapper}>
+      <div className={styles.container}>
+        <div className={styles.sliderTrack}></div>
+        <input
+          type={"range"}
+          className={styles.doubleRange}
+          onChange={onChangeCallback}
+          {...restProps}
+        />
+      </div>
+    </div>
   );
 };
 
