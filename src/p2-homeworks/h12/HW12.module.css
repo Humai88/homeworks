@@ -1,23 +1,30 @@
 .dark {
-    background: dimgrey;
+  background: dimgrey;
+  height: 10rem;
 }
 
 .dark-text {
-    color: aliceblue;
+  color: aliceblue;
 }
 
-.red {
-    background: lightcoral;
+.yellow {
+  background: #ecd662;
+  height: 10rem;
 }
 
-.red-text {
-    color: aqua;
+.yellow-text {
+  color: rgb(61, 61, 61);
 }
 
-.some {
-    background: lightgreen;
+.teal {
+  background: #53b8bb;
+  height: 10rem;
 }
 
-.some-text {
-    color: darkslateblue;
+.teal-text {
+  color: rgb(37, 37, 37);
+}
+
+.wrapper {
+  margin-top: 2rem;
 }

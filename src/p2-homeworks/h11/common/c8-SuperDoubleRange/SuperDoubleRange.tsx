@@ -10,6 +10,7 @@ type SuperDoubleRangePropsType = DefaultInputPropsType & {
   onChangeRange?: (value1: number, value2: number) => void;
   min: number;
   max: number;
+  colorHandler?: (value1: number, value2: number) => void;
 };
 type NewType = InputHTMLAttributes<HTMLInputElement>;
 
@@ -21,6 +22,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = ({
   className,
   min,
   max,
+
   ...restProps
 }) => {
   type InitialValuesType = {
@@ -43,7 +45,6 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = ({
     onChangeRange && onChangeRange(values.startValue, values.endValue);
   };
 
-  const finalRangeClassName = `${styles.slider} ${className ? className : ""}`;
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
