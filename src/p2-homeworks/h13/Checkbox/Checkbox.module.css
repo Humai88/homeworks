@@ -1,22 +1,15 @@
-/* // .checkbox {
-//   margin: 1rem;
-// }
-// .isDone {
-//   opacity: 0.8 !important;
-// } */
-
-input[type="checkbox"] + label {
+.input + .label {
   display: inline-block;
   margin: 0.2em;
   cursor: pointer;
   padding: 0.2em;
 }
 
-input[type="checkbox"] {
+.input {
   display: none;
 }
 
-input[type="checkbox"] + label:before {
+.input + .label:before {
   content: "\2714";
   border: 0.1em solid rgb(200, 200, 200);
   border-radius: 0.2em;
@@ -30,24 +23,23 @@ input[type="checkbox"] + label:before {
   color: transparent;
   transition: 0.2s;
 }
-
-input[type="checkbox"] + label:active:before {
+.input + .label:active:before {
   transform: scale(0);
 }
 
-input[type="checkbox"]:checked + label:before {
+.input:checked + .label:before {
   background-color: #675175;
   border-color: #675175;
   color: #fff;
 }
 
-input[type="checkbox"]:disabled + label:before {
+.input[type="checkbox"]:disabled + .label:before {
   transform: scale(1);
   border-color: #aaa;
 }
 
-input[type="checkbox"]:checked:disabled + label:before {
+.input:checked:disabled + .label:before {
   transform: scale(1);
-  background-color: #bfb;
-  border-color: #bfb;
+  background-color: #675175;
+  border-color: #675175;
 }

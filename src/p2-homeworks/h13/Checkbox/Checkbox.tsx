@@ -35,13 +35,14 @@ const Checkbox: React.FC<CheckboxPropsType> = ({
   return (
     <>
       <input
+        className={s.input}
         id={id}
         type={"checkbox"}
         onChange={onChangeCallback}
         {...restProps}
       />
       {children && <span className={s.checkmark}>{children}</span>}
-      <label htmlFor={id}></label>
+      <label className={s.label} htmlFor={id}></label>
     </>
   );
 };
